@@ -1,0 +1,112 @@
+/* *{
+    background-image: url('https://st2.depositphotos.com/3776273/10720/i/380/depositphotos_107206334-stock-photo-abstract-empty-dark-blackabstract-empty.jpg');
+    background-size: cover;
+    color: white;
+  }
+  .image-container{
+    border-radius: 50%;
+    display: flex;
+    margin-top: 20px;
+  }
+  .main-container {
+    display: flex;
+    justify-content:center ;
+    margin-top: 90px;
+    gap: 250px;
+  }
+  .myinfo {
+    padding-left: 20px;
+    margin-top:50px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .container{
+    display: inline-block;
+  }
+  .text {
+    letter-spacing: 5px;
+    font-family: monospace;
+        width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 2s steps(18)
+    cursor .4s step-end infinite alternate;
+  } */
+
+  * {
+    /* background-image: url(''); */
+    background-color: grey;
+    background-size: cover;
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+  }
+  
+  /* Responsive styling */
+  @media (min-width: 768px) {
+    .main-container {
+      flex-direction: row;
+      justify-content: center;
+      gap: 100px;
+    }
+  }
+  
+  .image-container {
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  @media (min-width: 768px) {
+    .image-container {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  .myinfo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 100px;
+  }
+  
+  @media (min-width: 768px) {
+    .myinfo {
+      text-align: left;
+      font-size: 24px;
+    }
+  }
+  
+  .text {
+    letter-spacing: 5px;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    /* animation: typing 2s steps(18), cursor .4s step-end infinite alternate; */
+  }
+  
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
