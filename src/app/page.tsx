@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import './homepage.css'
+import './homePage.css';
 export default function Home() {
   return (
       <div className="main-container">
